@@ -135,19 +135,20 @@ public class Availability {
     {
         if (obj instanceof Availability)
         {
-            if (((Availability)obj).isMon() != mon)
+            Availability ava = (Availability)obj;
+            if (ava.isMon() != mon)
                 return false;
-            if (((Availability)obj).isTue() != tue)
+            if (ava.isTue() != tue)
                 return false;
-            if (((Availability)obj).isWed() != wed)
+            if (ava.isWed() != wed)
                 return false;
-            if (((Availability)obj).isThu() != thu)
+            if (ava.isThu() != thu)
                 return false;
-            if (((Availability)obj).isFri() != fri)
+            if (ava.isFri() != fri)
                 return false;
-            if (((Availability)obj).isSat() != sat)
+            if (ava.isSat() != sat)
                 return false;
-            if (((Availability)obj).isSun() != sun)
+            if (ava.isSun() != sun)
                 return false;
             return true;
         }

@@ -112,13 +112,14 @@ public class Account {
     {
         if (obj instanceof Account)
         {
-            if (((Account)obj).getId() != getId())
+            Account acc = (Account)obj;
+            if (acc.getId() != getId())
                 return false;
-            else if (!((Account)obj).getLogin().equals(login))
+            else if (!acc.getLogin().equals(login))
                 return false;
-            else if (!((Account)obj).getFirstName().equals(firstName))
+            else if (!acc.getFirstName().equals(firstName))
                 return false;
-            else if (!((Account)obj).getLastName().equals(lastName))
+            else if (!acc.getLastName().equals(lastName))
                 return false;
             return true;
         }

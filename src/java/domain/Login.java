@@ -59,9 +59,10 @@ public class Login {
     {
         if (obj instanceof Login)
         {
-            if (!((Login)obj).getUsername().equals(username))
+            Login login = (Login)obj;
+            if (!login.getUsername().equals(username))
                 return false;
-            if (!((Login)obj).getPassword().equals(password))
+            if (!login.getPassword().equals(password))
                 return false;
             return true;
         }
