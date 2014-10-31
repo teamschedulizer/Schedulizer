@@ -19,7 +19,7 @@ public class AvailabilitySvcStubImpl implements IAvailabilitySvc {
     }
     
     @Override
-    public boolean submit(Availability availability)
+    public boolean submit(Account account, Availability availability)
     {
         return true;
     }

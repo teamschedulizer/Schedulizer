@@ -8,7 +8,7 @@ package domain;
  *
  * @author chutto001
  */
-public class Availability {
+public class Availability extends DomainAbs {
     private boolean mon;
     private boolean tue;
     private boolean wed;

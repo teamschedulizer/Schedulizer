@@ -17,4 +17,10 @@ public class AuthenticationSvcStubImpl implements IAuthenticationSvc {
     {
         return true;
     }
+    
+    @Override
+    public boolean store(Login login)
+    {
+        return false;
+    }
 }

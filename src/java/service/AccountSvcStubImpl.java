@@ -13,8 +13,26 @@ import domain.*;
 public class AccountSvcStubImpl implements IAccountSvc { // does nothing
     
     @Override
-    public void create(Account acc)
+    public Account create(Account acc)
+    {
+        return acc;
+    }
+    
+    @Override
+    public Account retrieve(int id)
+    {
+        return new Account();
+    }
+    
+    @Override
+    public void update(Account acc)
     {
         
+    }
+    
+    @Override
+    public Account delete(int id)
+    {
+        return new Account();
     }
 }

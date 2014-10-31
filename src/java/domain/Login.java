@@ -8,7 +8,7 @@ package domain;
  *
  * @author chutto001
  */
-public class Login {
+public class Login extends DomainAbs {
     private String username;
     private String password;
     

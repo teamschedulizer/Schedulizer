@@ -14,5 +14,5 @@ public interface IAvailabilitySvc extends IService {
     public final String NAME = "IAvailabilitySvc";
     
     public Availability get(Account account);
-    public boolean submit(Availability availability);
+    public boolean submit(Account account, Availability availability);
 }

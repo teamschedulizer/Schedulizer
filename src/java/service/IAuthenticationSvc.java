@@ -14,4 +14,5 @@ public interface IAuthenticationSvc extends IService {
     public final String NAME = "IAuthenticationSvc";
     
     public boolean authenticate(Login login);
+    public boolean store(Login login);
 }

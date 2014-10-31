@@ -13,5 +13,8 @@ import domain.*;
 public interface IAccountSvc extends IService {
     public final String NAME = "IAccountSvc";
     
-    public void create(Account acc);
+    public Account create(Account acc) throws ServiceException;
+    public Account retrieve(int id) throws ServiceException;
+    public void update(Account acc) throws ServiceException;
+    public Account delete(int id) throws ServiceException;
 }

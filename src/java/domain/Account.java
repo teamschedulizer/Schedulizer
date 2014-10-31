@@ -8,8 +8,7 @@ package domain;
  *
  * @author chutto001
  */
-public class Account {
-    private int id;
+public class Account extends DomainAbs implements java.io.Serializable {
     private Login login;
     private String firstName;
     private String lastName;
@@ -17,25 +16,10 @@ public class Account {
     
     public Account()
     {
-        id = 0;
         login = new Login();
         firstName = "";
         lastName = "";
         availability = new Availability();
-    }
-
-    /**
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(int id) {
-        this.id = id;
     }
 
     /**
@@ -78,6 +62,7 @@ public class Account {
      */
     public void setLogin(Login login) {
         this.login = login;
+        this.login.setId(id);
     }
     
     /**
@@ -92,6 +77,7 @@ public class Account {
      */
     public void setAvailability(Availability availability) {
         this.availability = availability;
+        this.availability.setId(id);
     }
 
     public boolean validate()
